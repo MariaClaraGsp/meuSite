@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+header {
+    background-color: #ffcccb;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-family: Arial, sans-serif; /* Mudada para fonte mais fofa */
+    font-size: 3em; /* Aumentado para melhorar a visualização */
+    color: #020202;
+}
+
+.highlight {
+    color: #e778af; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Mudada para branco */
+    font-weight: bold;
+}
+
+.faixa {
+    background-color: #ffcccb; /* Fundo rosa para o título */
+    padding: 10px; /* Espaçamento interno para o título */
+    text-align: center; /* Centraliza o título */
+    margin: 20px 0; /* Espaçamento em volta do título */
+}
+
+section {
+    padding: 20px 20px; /* Reduzido o padding */
+}
+
+.sobremim-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.foto {
+    border-radius: 55%;
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.skills-card {
+    background-image: url('aesthetics.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: #750037; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.skills-card ul {
+    list-style: none;
+}
+
+.project-container {
+    margin-top: 20px;
+}
+
+.protagonista {
+    align-items: center;
+    width: 50%; /* Diminuído para melhorar o alinhamento */
+    height: auto;
+    margin: 20px auto; /* Centralizado e espaçamento em cima e embaixo */
+    display: block; /* Para garantir que a imagem fique centralizada */
+}
+
+footer {
+    background-color: #ffcccb;
+    padding: 20px;
+    text-align: center;
+}
+
+.contato-container {
+    display: flex;
+    flex-direction: column; /* Mudado para coluna para melhor responsividade */
+    align-items: center; /* Centraliza os elementos */
+    gap: 20px;
+}
+
+.contato-info {
+    text-align: center; /* Centraliza o texto de contato */
+}
+
+.contato-info p {
+    margin: 5px 0;
+}
+
+.contato-form {
+    background-color: #fff; /* Fundo branco para o card de contato */
+    border: 1px solid #ccc; /* Borda para o card */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    width: 300px; /* Largura definida para o card */
+}
+
+.contato-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contato-form input {
+    width: calc(100% - 22px); /* Para levar em conta o padding e a borda */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Largura total para o botão */
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+@media (max-width: 768px) {
+    .sobremim-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .skills-card {
+        flex-direction: column; /* Coloca as habilidades em coluna */
+    }
+
+    .contato-container {
+        flex-direction: column; /* Coloca os elementos de contato em coluna */
+    }
+
+    .protagonista {
+        width: 80%; /* Aumenta a largura da imagem em telas menores */
+    }
+}
